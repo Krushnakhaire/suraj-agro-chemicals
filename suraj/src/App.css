@@ -1,0 +1,107 @@
+/* General styling for the body and layout */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Navbar styling */
+  .navbar {
+    margin-bottom: 20px; 
+  }
+  
+  .navbar .navbar-brand {
+    font-size: 1.5rem; 
+  }
+  
+  .navbar .navbar-nav .nav-link {
+    font-size: 1.1rem; 
+  }
+  
+  
+  .navbar-toggler {
+    border-color: #ffffff; 
+  }
+  
+  @media (max-width: 768px) {
+    .navbar-brand {
+      font-size: 1.25rem; 
+    }
+  
+    .navbar .navbar-nav .nav-link {
+      font-size: 1rem; 
+    }
+  
+  
+    .navbar-collapse {
+      padding: 10px;
+    }
+  }
+  
+
+  @media (max-width: 480px) {
+    .navbar .navbar-brand {
+      font-size: 1.1rem; 
+    }
+  
+    .navbar .navbar-nav .nav-link {
+      font-size: 0.9rem; 
+    }
+  }
+  
+
+  .container {
+    padding: 1rem;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+    }
+  }
+  
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+ 
+  .card {
+    margin-bottom: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .card {
+      margin-bottom: 15px;
+    }
+  }
+  
+ 
+  .flex-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .flex-container img {
+    max-width: 230px;
+    height: 230px;
+    object-fit: cover;
+  }
+  
+  @media (max-width: 768px) {
+    .flex-container img {
+      width: 45%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .flex-container img {
+      width: 90%; 
+    }
+  }
+  

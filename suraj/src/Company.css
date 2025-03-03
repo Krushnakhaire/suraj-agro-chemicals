@@ -1,0 +1,81 @@
+/* Apply padding and margin to container */
+.container {
+    padding: 0 15px;
+  }
+  
+  /* Styling for cards */
+  .card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    padding: 20px;
+  }
+  
+ 
+  .card-title {
+    font-size: 1.75rem;
+    margin-bottom: 15px;
+    text-align: center;  
+  }
+  
+  .card-body {
+    text-align: center; 
+  }
+  
+  .card-body ul {
+    margin-left: 0; 
+    padding-left: 0; 
+    list-style-position: inside; 
+  }
+  
+ 
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-align: center; 
+  }
+  
+  
+  @media (max-width: 992px) {
+    .card-body {
+      padding: 15px;
+    }
+  
+    .card-title {
+      font-size: 1.5rem;
+    }
+  
+    h2 {
+      font-size: 1.25rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      padding: 0 10px;
+    }
+  
+    .card-title {
+      font-size: 1.25rem;
+    }
+  
+    h2 {
+      font-size: 1.1rem;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .card-title {
+      font-size: 1rem;
+    }
+  
+    h2 {
+      font-size: 1rem;
+      margin-bottom: 15px;
+    }
+  
+    .container {
+      padding: 0 5px;
+    }
+  }
+  
