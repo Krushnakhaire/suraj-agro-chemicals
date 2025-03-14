@@ -1,11 +1,11 @@
 {
   "name": "backend",
   "version": "1.0.0",
-  "main": "./backend/server.js", 
+  "main": "./server.js", 
   "type": "module",
   "scripts": {
-    "start": "node backend/server.js",
-    "server": "nodemon backend/server.js",
+    "start": "node server.js",
+    "server": "nodemon server.js",
     "client": "npm run build --prefix ../suraj && start http://localhost:5173",
     "dev": "concurrently \"npm run server\" \"npm run client\""
   },
