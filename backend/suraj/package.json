@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "backend": "file:..",
+    "vite": "^6.2.3"
+  }
+}

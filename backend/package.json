@@ -1,26 +1,21 @@
 {
   "name": "backend",
   "version": "1.0.0",
-  "main": "./server.js", 
+  "private": true,
   "type": "module",
   "scripts": {
-    "start": "node server.js",
+    "start": "nodemon server.js",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
     "server": "nodemon server.js",
-    "client": "npm run build --prefix ../suraj && start http://localhost:5173",
-    "dev": "concurrently \"npm run server\" \"npm run client\""
+    "client": "npm run preview --prefix ../suraj"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
   "dependencies": {
-    "body-parser": "^1.20.3",
-    "colors": "^1.4.0",
     "cors": "^2.8.5",
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
     "mongoose": "^8.9.5",
-    "morgan": "^1.10.0"
+    "morgan": "^1.10.0",
+    "open": "^10.1.0"
   },
   "devDependencies": {
     "concurrently": "^9.1.2",

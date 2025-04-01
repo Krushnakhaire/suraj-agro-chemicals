@@ -4,10 +4,11 @@
   "private": true,
   "scripts": {
     "start": "concurrently \"cd backend && npm start\" \"cd suraj && npm run preview\"",
+    "dev": "concurrently \"cd backend && npm run server\" \"cd suraj && npm run dev\"",
     "install-all": "npm install --prefix backend && npm install --prefix suraj"
   },
   "dependencies": {
-    "concurrently": "^9.1.2", 
+    "concurrently": "^9.1.2",
     "express": "^4.21.2",
     "mongoose": "^8.9.5"
   }
